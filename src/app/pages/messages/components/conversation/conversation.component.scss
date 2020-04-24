@@ -1,14 +1,19 @@
-ul {
-  margin: 15px;
-  padding: 0;
-  text-decoration: none;
-  list-style-type: none;
+.content-conversations {
+  padding-bottom: 80px;
 
-  li {
-    display: flex;
+  ul {
+    margin: 15px;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
 
-    app-my-message {
-      margin-left: auto;
+    li {
+      display: flex;
+
+      app-my-message {
+        margin-left: auto;
+      }
     }
   }
 }
+

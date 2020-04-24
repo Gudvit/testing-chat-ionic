@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MessagesService {
+  public sendMessage$ = new BehaviorSubject( false);
   public chatMessages: any[] = [];
   public user: boolean;
 
@@ -22,6 +24,7 @@ export class MessagesService {
   }
 
   sendMessage(message) {
+    this.sendMessage$.next(true);
     this.chatMessages.push(this.prepareObject(message));
   }
 }

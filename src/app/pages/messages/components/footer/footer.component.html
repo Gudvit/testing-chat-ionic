@@ -1,0 +1,9 @@
+<div class="footer">
+  <input
+      type="text"
+      placeholder="Your message..."
+      [(ngModel)]="message"
+      (keyup.enter)="sendMessage()">
+  <div class="file"></div>
+  <div class="send" (click)="sendMessage()"></div>
+</div>

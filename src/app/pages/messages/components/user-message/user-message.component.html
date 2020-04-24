@@ -1,0 +1,7 @@
+<div class="user-message">
+  <img [src]="'../../../../../assets/images/avatar.png'" alt="img">
+  <div class="wrap-text">
+    <span class="text">{{message.text}}</span>
+    <span class="time" *ngIf="message.time">{{message.time | date: 'hh:mm a'}}</span>
+  </div>
+</div>

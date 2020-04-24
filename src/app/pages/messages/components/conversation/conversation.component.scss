@@ -1,0 +1,14 @@
+ul {
+  margin: 15px;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+
+  li {
+    display: flex;
+
+    app-my-message {
+      margin-left: auto;
+    }
+  }
+}

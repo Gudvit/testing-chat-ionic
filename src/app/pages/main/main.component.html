@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Main</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="content">
+    <h2>Hello</h2>
+    <p>This is a test task (Chat)</p>
+    <ion-button color="primary" (click)="goTo('1')">1 account</ion-button>
+    <ion-button color="primary" (click)="goTo('2')">2 account</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,8 @@
+<div class="content-conversations">
+  <ul>
+    <li *ngFor="let message of messagesService.chatMessages">
+      <app-user-message *ngIf="message.user" [message]="message"></app-user-message>
+      <app-my-message *ngIf="!message.user" [message]="message"></app-my-message>
+    </li>
+  </ul>
+</div>
